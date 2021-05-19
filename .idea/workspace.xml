@@ -1,56 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d206d270-e142-4689-884c-095d6758ad19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/auth/annotation/resolver/AuthMethodArgumentResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/auth/config/WebMvcConfigFromAuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/auth/enums/TokenSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/auth/exception/AuthException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/auth/exception/TokenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/auth/exception/UnauthorizedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/auth/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/auth/service/impl/TokenServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/base/handler/ExceptionsHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/base/handler/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/data/SignInData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/data/SignUpData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/exception/PasswordErrorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/exception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/view/SignInView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/img/donation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/img/donation_alipay_red_packet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/common/annotation/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/auth/annotation/Auth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/common/annotation/resolver/AuthMethodArgumentResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/common/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/base/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/base/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/common/enums/TokenType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/common/exception/ExceptionsHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/common/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/base/exception/ServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/common/service/TokenService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/common/service/impl/TokenServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/example/controller/ExampleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -124,6 +88,7 @@
     <option name="width" value="891" />
     <option name="height" value="555" />
   </component>
+  <component name="ProjectId" id="1slOEQ9Gn0cdaY9f4fMu9DOmyxY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -145,7 +110,17 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -161,19 +136,7 @@
       <recent name="E:\Workspace\Java\springboot-restful-starter\src\main\java\com\neko\seed\base\handler" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.neko.seed.Application" />
       <module name="seed" />
@@ -187,12 +150,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="seed" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neko.seed.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -203,6 +185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545964609439</updated>
+      <workItem from="1621443599312" duration="546000" />
     </task>
     <servers />
   </component>
@@ -230,6 +213,20 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neko/seed/auth/data/AuthData.java" />
