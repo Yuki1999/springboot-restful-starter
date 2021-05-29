@@ -1,22 +1,17 @@
 package com.neko.seed.controller;
 
-
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.neko.seed.entity.po.CommunistRelation;
-import com.neko.seed.entity.vo.CommunistSexNum;
 import com.neko.seed.entity.vo.RelationVO;
 import com.neko.seed.service.CommunistRelationService;
 import com.neko.seed.utils.Result;
 import com.neko.seed.entity.po.Communist;
 import com.neko.seed.service.CommunistService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.management.relation.Relation;
 import java.util.List;
 
-@Slf4j
 @RestController
 @RequestMapping("/organization")
 public class CommunistController {
@@ -30,6 +25,7 @@ public class CommunistController {
         List<Communist> communists = communistService.list();
         return new Result().success(communists);
     }
+
     @GetMapping(value = "/communist/{id}")
     public Result getCommunistById(@PathVariable String id) {
         List<Communist> relatedCommunists = communistService.getRelatedCommunists(id);
@@ -46,7 +42,7 @@ public class CommunistController {
     public Result deleteCommunist(@PathVariable String id) {
         communistService.removeById(id);
         QueryWrapper<CommunistRelation> qwp = new QueryWrapper<>();
-        qwp.eq("source_id",id).or().eq("target_id",id);
+        qwp.eq("source_id", id).or().eq("target_id", id);
         communistRelationService.remove(qwp);
         return new Result().success();
     }
@@ -81,8 +77,9 @@ public class CommunistController {
         communistRelationService.removeById(id);
         return new Result().success();
     }
-    @GetMapping(value="/communist/sex/num")
-    public Result getCommunistSexNum(){
+
+    @GetMapping(value = "/communist/sex/num")
+    public Result getCommunistSexNum() {
         List<List<Object>> sexNum = communistService.getSexNum();
         return new Result().success(sexNum);
     }

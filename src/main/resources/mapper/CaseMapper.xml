@@ -6,7 +6,7 @@
 
     <resultMap id="BaseResultMap" type="com.neko.seed.entity.po.Case">
             <id property="id" column="id" jdbcType="INTEGER"/>
-            <result property="category" column="category" jdbcType="VARCHAR"/>
+            <result property="category" column="category" jdbcType="INTEGER"/>
     </resultMap>
 
     <sql id="Base_Column_List">

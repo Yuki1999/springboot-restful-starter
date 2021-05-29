@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d206d270-e142-4689-884c-095d6758ad19" name="Default Changelist" comment="v0.1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/CaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/entity/po/Case.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/entity/vo/ChartData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/entity/vo/CommunistSexNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/mapper/CaseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/CaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/CaseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CaseMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e085dfc-69c0-4a7b-95fb-637ad5a1eca0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e085dfc-69c0-4a7b-95fb-637ad5a1eca0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+    <list default="true" id="d206d270-e142-4689-884c-095d6758ad19" name="Default Changelist" comment="饼图数据接口，Case实体类">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/CaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/CaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/CommunistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/CommunistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/CommunistRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/CommunistRelationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/CommunistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/CommunistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/CommunistRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/CommunistRelationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/CommunistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/CommunistServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/PopulationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/PopulationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/entity/po/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/entity/po/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/CaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/CaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/CaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/CaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CaseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CaseMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +283,7 @@
       <workItem from="1622093320716" duration="6193000" />
       <workItem from="1622192258388" duration="12990000" />
       <workItem from="1622220428788" duration="25000" />
-      <workItem from="1622220494979" duration="14043000" />
+      <workItem from="1622220494979" duration="15222000" />
     </task>
     <task id="LOCAL-00001" summary="add po">
       <created>1621444235064</created>
@@ -306,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622264880226</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="饼图数据接口，Case实体类">
+      <created>1622281840694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622281840694</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -363,7 +363,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add po" />
     <MESSAGE value="v0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.1" />
+    <MESSAGE value="饼图数据接口，Case实体类" />
+    <option name="LAST_COMMIT_MESSAGE" value="饼图数据接口，Case实体类" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neko/seed/auth/data/AuthData.java" />

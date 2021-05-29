@@ -1,19 +1,15 @@
 package com.neko.seed.controller;
-
-
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.neko.seed.utils.Result;
 import com.neko.seed.entity.po.Family;
 import com.neko.seed.entity.po.Population;
 import com.neko.seed.service.FamilyService;
 import com.neko.seed.service.PopulationService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Slf4j
 @RestController
 @RequestMapping("/population")
 public class PopulationController {

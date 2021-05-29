@@ -93,13 +93,6 @@
 			<version>0.10.5</version>
 			<scope>runtime</scope>
 		</dependency>
-		<!-- RSASSA-PSS (PS256, PS384, PS512) 加密依赖:
-		<dependency>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bcprov-jdk15on</artifactId>
-			<version>1.60</version>
-			<scope>runtime</scope>
-		</dependency> -->
 	</dependencies>
 
 	<build>

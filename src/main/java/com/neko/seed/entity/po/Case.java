@@ -11,7 +11,7 @@ import lombok.Data;
  * null
  * @TableName case
  */
-@TableName(value ="case")
+@TableName(value ="`case`")
 @Data
 public class Case implements Serializable {
     /**
@@ -23,7 +23,7 @@ public class Case implements Serializable {
     /**
      * 1人社，2城市管理，3应急管理，4卫健
      */
-    private String category;
+    private Integer category;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
