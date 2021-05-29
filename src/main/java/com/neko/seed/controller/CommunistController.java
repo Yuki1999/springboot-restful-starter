@@ -3,6 +3,8 @@ package com.neko.seed.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.neko.seed.entity.po.CommunistRelation;
+import com.neko.seed.entity.vo.CommunistSexNum;
+import com.neko.seed.entity.vo.RelationVO;
 import com.neko.seed.service.CommunistRelationService;
 import com.neko.seed.utils.Result;
 import com.neko.seed.entity.po.Communist;
@@ -49,6 +51,13 @@ public class CommunistController {
         return new Result().success();
     }
 
+    @GetMapping(value = "/realtion/show")
+    public Result getShowRelation() {
+        List<CommunistRelation> relations = communistRelationService.list();
+        List<RelationVO> relationVOS = communistRelationService.toVOList(relations);
+        return new Result().success(relationVOS);
+    }
+
     @GetMapping(value = "/realtion")
     public Result getRelation() {
         List<CommunistRelation> relations = communistRelationService.getHandledRelations();
@@ -72,5 +81,9 @@ public class CommunistController {
         communistRelationService.removeById(id);
         return new Result().success();
     }
-
+    @GetMapping(value="/communist/sex/num")
+    public Result getCommunistSexNum(){
+        List<List<Object>> sexNum = communistService.getSexNum();
+        return new Result().success(sexNum);
+    }
 }
