@@ -4,54 +4,41 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
 import java.io.Serializable;
-
 import lombok.Data;
 
 /**
  * null
- *
- * @TableName communist
+ * @TableName communist_relation
  */
-@TableName(value = "communist")
+@TableName(value ="communist_relation")
 @Data
-public class Communist implements Serializable {
+public class CommunistRelation implements Serializable {
     /**
-     *
+     * 主键
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 姓名
+     * 
      */
-    private String name;
+    private Integer sourceId;
 
     /**
-     * 年龄
+     * 
      */
-    private Integer age;
+    private Integer targetId;
 
     /**
-     * 性别
+     * 
      */
-    private String gender;
+    private String type;
 
     /**
-     * 住址
+     * 
      */
-    private String address;
-
-    /**
-     * 籍贯
-     */
-    private String nativePlace;
-
-    /**
-     * 工作单位
-     */
-    private String workPlace;
+    private Double value;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

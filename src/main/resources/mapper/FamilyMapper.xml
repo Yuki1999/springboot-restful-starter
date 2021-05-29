@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neko.seed.mapper.FamilyMapper">
+
+    <resultMap id="BaseResultMap" type="com.neko.seed.entity.po.Family">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="familyNo" column="family_no" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="regiAuth" column="regi_auth" jdbcType="VARCHAR"/>
+            <result property="contractor" column="contractor" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,family_no,name,
+        address,type,regi_auth,
+        contractor
+    </sql>
+</mapper>
