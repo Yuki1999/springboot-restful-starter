@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.AgePeriodMapper">
+
+    <resultMap id="BaseResultMap" type="com.neko.seed.entity.po.AgePeriod">
+            <id property="state" column="state" jdbcType="VARCHAR"/>
+            <result property="underFive" column="under_five" jdbcType="DOUBLE"/>
+            <result property="fiveToThirteen" column="five_to_thirteen" jdbcType="DOUBLE"/>
+            <result property="fourteenToSeventeen" column="fourteen_to_seventeen" jdbcType="DOUBLE"/>
+            <result property="eighteenToTwentyFour" column="eighteen_to_twenty_four" jdbcType="DOUBLE"/>
+            <result property="twentyFiveToFiftyFour" column="twenty_five_to_fifty_four" jdbcType="DOUBLE"/>
+            <result property="fiftyFiveToSixtyFour" column="fifty_five_to_sixty_four" jdbcType="DOUBLE"/>
+            <result property="overSixtyFive" column="over_sixty_five" jdbcType="DOUBLE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        state,under_five,five_to_thirteen,
+        fourteen_to_seventeen,eighteen_to_twenty_four,twenty_five_to_fifty_four,
+        fifty_five_to_sixty_four,over_sixty_five
+    </sql>
+</mapper>

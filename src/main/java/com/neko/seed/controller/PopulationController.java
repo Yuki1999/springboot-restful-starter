@@ -1,5 +1,8 @@
 package com.neko.seed.controller;
+
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.neko.seed.entity.po.AgePeriod;
+import com.neko.seed.service.AgePeriodService;
 import com.neko.seed.utils.Result;
 import com.neko.seed.entity.po.Family;
 import com.neko.seed.entity.po.Population;
@@ -18,6 +21,9 @@ public class PopulationController {
 
     @Autowired
     private FamilyService familyService;
+
+    @Autowired
+    private AgePeriodService agePeriodService;
 
     @GetMapping(value = "/floating")
     public Result getFloatings() {
@@ -65,4 +71,20 @@ public class PopulationController {
         return new Result().success();
     }
 
+    @GetMapping(value = "/age/period")
+    public Result getAgePeriod() {
+        List<AgePeriod> agePeriods = agePeriodService.list();
+        for (AgePeriod agePeriod : agePeriods) {
+            agePeriod.setTotal(agePeriod.getUnderFive() +
+                    agePeriod.getFiveToThirteen() +
+                    agePeriod.getFourteenToSeventeen() +
+                    agePeriod.getEighteenToTwentyFour() +
+                    agePeriod.getTwentyFiveToFiftyFour() +
+                    agePeriod.getFiftyFiveToSixtyFour() +
+                    agePeriod.getOverSixtyFive());
+        }
+        System.out.println(agePeriods);
+        return new Result().success(agePeriods);
+    }
+    //
 }

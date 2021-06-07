@@ -4,16 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d206d270-e142-4689-884c-095d6758ad19" name="Default Changelist" comment="饼图数据接口，Case实体类">
+    <list default="true" id="d206d270-e142-4689-884c-095d6758ad19" name="Default Changelist" comment="case分类数据">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/ContractController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/entity/po/AgePeriod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/entity/po/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/mapper/AgePeriodMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/mapper/ContractMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/AgePeriodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/ContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/AgePeriodServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/ContractServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/utils/Messagepojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/websockt/WebSocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AgePeriodMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ContractMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e085dfc-69c0-4a7b-95fb-637ad5a1eca0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e085dfc-69c0-4a7b-95fb-637ad5a1eca0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/CaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/CaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/CommunistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/CommunistController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/PopulationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/controller/PopulationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/entity/po/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/entity/po/Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/CaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/CaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/CaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/service/impl/CaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CaseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CaseMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,11 +153,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -162,6 +175,27 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081/v1/population/age/period" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8081/v1/organization/relation/16" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8081/organization/relation/16" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:8081/v1/organization/communist" />
@@ -187,19 +221,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neko.seed.Application" />
-      <module name="seed" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.neko.seed.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.neko.seed.MyDate" />
       <module name="seed" />
@@ -213,13 +234,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,21 +253,11 @@
     <configuration name="generated-requests#61" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="61" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="ApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="seed" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.neko.seed.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.neko.seed" />
-      <option name="MAIN_CLASS_NAME" value="com.neko.seed.ApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#68" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="68" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#70" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="70" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="seed" />
@@ -255,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests#70" />
+        <item itemvalue="HTTP Request.generated-requests#68" />
         <item itemvalue="Application.MyDate" />
         <item itemvalue="HTTP Request.generated-requests#60" />
         <item itemvalue="HTTP Request.generated-requests#61" />
-        <item itemvalue="JUnit.ApplicationTests.contextLoads" />
-        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +296,17 @@
       <workItem from="1622093320716" duration="6193000" />
       <workItem from="1622192258388" duration="12990000" />
       <workItem from="1622220428788" duration="25000" />
-      <workItem from="1622220494979" duration="15222000" />
+      <workItem from="1622220494979" duration="18256000" />
+      <workItem from="1622306653256" duration="33000" />
+      <workItem from="1622448158714" duration="1456000" />
+      <workItem from="1622572184742" duration="4996000" />
+      <workItem from="1622700683805" duration="32000" />
+      <workItem from="1622726293654" duration="703000" />
+      <workItem from="1622792153820" duration="18000" />
+      <workItem from="1622793005610" duration="152000" />
+      <workItem from="1622830445840" duration="1193000" />
+      <workItem from="1622859679043" duration="29820000" />
+      <workItem from="1623078469827" duration="1511000" />
     </task>
     <task id="LOCAL-00001" summary="add po">
       <created>1621444235064</created>
@@ -306,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622281840694</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="case分类数据">
+      <created>1622282985460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622282985460</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -352,7 +382,25 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -364,7 +412,8 @@
     <MESSAGE value="add po" />
     <MESSAGE value="v0.1" />
     <MESSAGE value="饼图数据接口，Case实体类" />
-    <option name="LAST_COMMIT_MESSAGE" value="饼图数据接口，Case实体类" />
+    <MESSAGE value="case分类数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="case分类数据" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neko/seed/auth/data/AuthData.java" />

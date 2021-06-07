@@ -1,15 +1,22 @@
 package com.neko.seed.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.api.R;
 import com.neko.seed.entity.po.CommunistRelation;
 import com.neko.seed.entity.vo.RelationVO;
 import com.neko.seed.service.CommunistRelationService;
 import com.neko.seed.utils.Result;
 import com.neko.seed.entity.po.Communist;
 import com.neko.seed.service.CommunistService;
+import com.neko.seed.websockt.WebSocketServer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.EncodeException;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -82,5 +89,28 @@ public class CommunistController {
     public Result getCommunistSexNum() {
         List<List<Object>> sexNum = communistService.getSexNum();
         return new Result().success(sexNum);
+    }
+    @GetMapping(value = "/satisfaction")
+    public Result getRate() {
+        List<List<Object>> chartData=new ArrayList<>();
+        List<Object> sexNumOfMale = new ArrayList<>();
+        sexNumOfMale.add("satisfied");
+        sexNumOfMale.add(90);
+        List<Object> sexNumOfNormal = new ArrayList<>();
+        sexNumOfNormal.add("normal");
+        sexNumOfNormal.add(50);
+        List<Object> sexNumOfFemale = new ArrayList<>();
+        sexNumOfFemale.add("unsatisfied");
+        sexNumOfFemale.add(8);
+        chartData.add(sexNumOfMale);
+        chartData.add(sexNumOfNormal);
+        chartData.add(sexNumOfFemale);
+        return new Result().success(chartData);
+    }
+
+    @GetMapping("testws")
+    public ResponseEntity<Void> testws() throws IOException, EncodeException {
+        WebSocketServer.sendInfo("dsadsad", "111");
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 }
